@@ -73,9 +73,9 @@ def tinyplaces(path='', num_train=None, num_val=None, feature=False, binary=True
 
   Returns:
   - x_train: float32 tensor of shape (num_train, 3, 32, 32) / If feature is true, (num_train, 3, 256)
-  - y_train: int64 tensor of shape (num_train, 3, 32, 32)
+  - y_train: int64 tensor of shape (num_train, )
   - x_val: float32 tensor of shape (num_val, 3, 32, 32) / If feature is true, (num_val, 3, 256)
-  - y_val: int64 tensor of shape (num_val, 3, 32, 32)
+  - y_val: int64 tensor of shape (num_val, )
   """
   
   if binary:

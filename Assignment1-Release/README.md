@@ -30,7 +30,7 @@ CIFAR is a large dataset for image classification. Please refer to https://www.c
 For tinyplaces-train, the key “data” contains a (10000, 3072) numpy array representing the image data.
 The key “label ” contains a (10000,) numpy array representing the label data. 
 The image data and label data should be randomly shuffled using numpy’s random.shuffle function.
-For how to create CIFAR like dataset, you may refer to https://newbedev.com/how-to-create-dataset-similar-to-cifar-10
+For how to create CIFAR like dataset, you may refer to https://stackoverflow.com/questions/35032675/how-to-create-dataset-similar-to-cifar-10 (However, we use pickle to save the data, and we have two keys "data" and "label" instead of putting them together). 
   * tinyplaces-train and tinyplaces-val should be dumped using pickle under a folder named “data” in the assignment directory.
 
 * You need to create **tinyplaces-train-multiclass** and **tinyplaces-val-multiclass** 

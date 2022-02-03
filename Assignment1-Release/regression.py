@@ -20,9 +20,9 @@ def linear(X, W, b):
     - b: the bias which has been initialized
     
     Returns:
-    - y_pred: scores, in the range of [0,1], representing the output of the linear function.
-            for linear regression and logistic regression, should be shaped as (num,1) numpy array.
-            for softmax regression, should be shaped as (num, 20) numpy array.
+    - y_pred: scores, representing the output of the linear function.
+            for linear regression and logistic regression, should be shaped as (num,1) .
+            for softmax regression, should be shaped as (num, 20).
     """
     y_pred = None
     ###########################################################################
@@ -42,10 +42,10 @@ def sigmoid(y_pred):
     Implements the sigmoid function for logistic regression
     
     Inputs:
-    - y_pred: scores output by linear function, shaped as (num,1) numpy array
+    - y_pred: scores output by linear function, shaped as (num,1) 
     
     Returns:
-    - s: scores after sigmoid function, shaped as (num,1) numpy array
+    - s: scores after sigmoid function, shaped as (num,1) 
     """
     s = None
     ###########################################################################
@@ -68,7 +68,7 @@ def softmax(y_pred):
     - y_pred: scores of all categories, output by linear function
     
     Returns:
-    - s: scores after softmax function, shaped as (num,20) numpy array
+    - s: scores after softmax function, shaped as (num,20) 
     """
     s = None
     ###########################################################################
@@ -246,7 +246,7 @@ class LogisticRegression():
 
   def get_loss(self, y_pred, Y):
     """
-    Using the Mean Square Error as the loss function
+    Using the Cross-Entropy Loss as the loss function
 
     Inputs:
     - Y: the target labels (num, )
@@ -342,7 +342,7 @@ class SoftmaxRegression():
 
   def get_loss(self, y_pred, Y):
     """
-    Using the Mean Square Error as the loss function
+    Using the Negative Log Likelihood Loss as the loss function
 
     Inputs:
     - Y: the target labels (num,)
